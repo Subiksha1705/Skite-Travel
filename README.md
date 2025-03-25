@@ -1,87 +1,79 @@
-Skite Travel - Static Tourism Booking Page
+# Skite Travel - Static Tourism Booking Page  
 
-Skite Travel is a visually appealing static website designed for a tourism agency. Users can explore a wide variety of tourist destinations, view detailed descriptions and images, and submit booking requests using a simple form. Upon submission, the agency will contact users for further communication.
+Skite Travel is a simple yet visually appealing static website designed for a tourism agency. It allows users to explore various tourist destinations, view images and descriptions, and submit booking requests using a form. Upon form submission, the agency will contact the users for further information.  
 
-Features
+## Features  
 
-A clean and modern interface designed using HTML, CSS, and JavaScript.
+- Clean and modern UI using HTML, CSS, and JavaScript.  
+- Interactive gallery showcasing popular travel destinations.  
+- Simple and functional booking form using PHP for backend processing.  
+- Responsive design for seamless access across different devices.  
+- Contact page for inquiries and feedback.  
 
-Beautiful image galleries and detailed descriptions for tourist attractions.
+## Technologies Used  
 
-Users can easily fill out a booking form with their details and desired destination.
+- HTML - Structure and content of the website.  
+- CSS - Styling and responsive layout.  
+- JavaScript - Interactivity and form validation.  
+- PHP - Backend for processing form data.  
+- XAMPP - Local server environment.  
 
-A responsive contact form to get in touch with the agency.
+## Pages Overview  
 
-Mobile-friendly layout that adjusts across various devices.
+- Home Page: Overview of Skite Travel services with attractive visuals.  
+- Destinations Page: Browse various destinations with detailed descriptions and images.  
+- Booking Page: Fill out a simple form to book your desired trip.  
+- Contact Page: Submit inquiries or feedback using a contact form.  
 
-Technologies Used
+## Installation and Setup  
 
-: For page structure and content.
+Follow these steps to run the project locally using XAMPP:  
 
-: For styling and animations.
+### Step 1: Install XAMPP  
 
-: For interactivity and form validation.
+- Download XAMPP from the official website: [Download XAMPP](https://www.apachefriends.org/index.html)  
+- Install and launch the XAMPP Control Panel.  
 
-: For form submission and backend processing.
+### Step 2: Start the Server  
 
-Pages Overview
+1. Open XAMPP Control Panel.  
+2. Click on the Start button for both Apache (for PHP) and MySQL (if you are using databases).  
 
-A vibrant landing page featuring top destinations and an overview of services.
+### Step 3: Download and Place Project Files  
 
-A detailed page with images, descriptions, and travel insights.
+1. Clone this repository using Git:  
+    ```bash
+    git clone https://github.com/your-username/skite-travel.git
+    ```
+2. Move the project folder to the htdocs directory inside your XAMPP installation folder:  
+    - Windows: `C:\xampp\htdocs\skite-travel`  
+    - Mac/Linux: `/Applications/XAMPP/htdocs/skite-travel`  
 
-A simple form for users to submit travel inquiries.
+### Step 4: Configure the Contact Form  
 
-A form for direct communication with the agency.
+1. Navigate to the `contact.php` file inside the project folder.  
+2. Update the following line with your agency’s email address to receive inquiries:  
+    ```php
+    $to = "your-agency-email@example.com";
+    ```
 
-Setup Instructions
+### Step 5: Access the Website  
 
-Step 1: Install XAMPP
+1. Open your browser and go to:  
+    ```
+    http://localhost/skite-travel
+    ```
+2. Navigate through the website and try submitting a booking request.  
 
-Download XAMPP from the official website: XAMPP Download.
+## User Journey  
 
-Follow the installation steps.
+1. Explore Destinations: Users browse the curated list of destinations with photos and descriptions.  
+2. View Details: Click on a destination to view additional information.  
+3. Book a Trip: Fill out the booking form with travel preferences.  
+4. Confirmation: Once the form is submitted, the agency will contact the user.  
 
-Ensure Apache is installed.
+## Additional Notes  
 
-Step 2: Start XAMPP Server
-
-Open .
-
-Click  next to  to start the server.
-
-Step 3: Clone and Configure the Project
-
-Clone the repository using Git:
-
-git clone https://github.com/your-username/skite-travel.git
-
-Move the skite-travel folder to the XAMPP htdocs directory:
-
-C:\xampp\htdocs
-
-/Applications/XAMPP/htdocs
-
-Step 4: Configure Contact Form
-
-Open the contact.php file.
-
-Update the following line with your agency's email address:
-
-$to = "your-agency-email@example.com";
-
-Step 5: Access the Website
-
-Open your browser and navigate to:
-
-http://localhost/skite-travel
-
-User Journey
-
-Users can browse various travel destinations with high-quality images and brief descriptions.
-
-Clicking on a destination provides an in-depth view of tourist attractions, accommodation options, and travel tips.
-
-Users can fill out a simple booking form with their name, contact details, and preferred destination.
-
-After submitting the form, the travel agency will reach out to finalize the booking.
+- Ensure Apache is running when accessing the site.  
+- Form submissions will be processed using PHP. Make sure PHP is enabled in XAMPP.  
+- Test your form using sample inputs to confirm it works correctly.  
